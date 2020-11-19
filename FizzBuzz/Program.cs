@@ -11,7 +11,7 @@ namespace FizzBuzz
         static void Main(string[] args)
         {
             Console.WriteLine("FizzBuzz");
-            Console.Write("Podaj liczbę");
+            Console.Write("Podaj liczbę: ");
             int usernumber = ItIsValidInt();
             var fizbuzz = new FizzBuzz();
             Console.WriteLine(fizbuzz.GiveSolution(usernumber));
