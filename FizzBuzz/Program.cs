@@ -10,6 +10,19 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("FizzBuzz");
+            Console.Write("Podaj liczbę");
+            int usernumber = ItIsValidInt();
+
+        }
+
+        private static int ItIsValidInt()
+        {
+            if (!(int.TryParse(Console.ReadLine(), out int result)))
+                throw new Exception("To nie jest liczba");
+            else
+                return result;
+
         }
     }
 }
