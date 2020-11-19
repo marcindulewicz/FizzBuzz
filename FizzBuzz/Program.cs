@@ -13,7 +13,8 @@ namespace FizzBuzz
             Console.WriteLine("FizzBuzz");
             Console.Write("Podaj liczbę");
             int usernumber = ItIsValidInt();
-
+            var fizbuzz = new FizzBuzz();
+            Console.WriteLine(fizbuzz.GiveSolution(usernumber));
         }
 
         private static int ItIsValidInt()
